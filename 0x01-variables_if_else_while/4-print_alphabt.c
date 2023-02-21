@@ -8,21 +8,15 @@
  */
 int main(void)
 {
-	char letter  = 'a';
-	while (letter <= 'z')
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (letter != 'q' && letter != 'e')
-		{	putchar(letter);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
 		}
-		letter++;
 	}
-	letter  = 'A';
-	while (letter <= 'Z')
-	{
-		if (letter != 'Q' && letter != 'E')
-		{	putchar(letter);
-		}
-		letter++;
-	}
+	putchar('\n');
 	return (0);
 }
