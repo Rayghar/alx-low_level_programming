@@ -19,7 +19,7 @@ int main(void)
 	else if (last_digit == 0)
 		printf("%d and is 0", last_digit);
 	else
-		printf("%d less than 6 and not 0", last_digit);
+		printf("%d and is less than 6 and not 0", last_digit);
 	printf("\n");
 	return (0);
 }
