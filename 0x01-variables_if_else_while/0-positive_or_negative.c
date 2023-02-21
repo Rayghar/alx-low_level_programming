@@ -14,9 +14,9 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	printf("%d ", n);
 	if (n > 0)
-		printf("is positive\n");
+		printf("is positive");
 	else if (n == 0)
-		printf("is zero\n");
+		printf("is zero");
 	else
 		printf("is negative");
 	printf("\n");
