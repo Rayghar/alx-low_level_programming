@@ -12,7 +12,7 @@ int main(void)
 
 	while (i < 26)
 	{
-		putchar('a'a + i);
+		putchar('a' + i);
 		i++;
 	}
 	putchar('\n');
