@@ -15,7 +15,6 @@ int main(void)
 		putchar('a' + i);
 		i++;
 	}
-	
 	i = 0;
 	while (i < 26)
 	{
