@@ -8,8 +8,6 @@
  */
 
 void print_alphabet(void);
-
-int main(void)
 {
 	char letter = 'a';
 
@@ -19,4 +17,10 @@ int main(void)
 		letter++;
 	}
 	_putchar('\n');
+}
+
+int main()
+{
+	print_alphabet();
 	return(0);
+}
