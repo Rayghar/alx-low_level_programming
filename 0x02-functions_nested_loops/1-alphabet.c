@@ -1,6 +1,6 @@
 #include "main.h"
 #include <unistd.h>
-
+#include "holberton.h"
 /**
  * main - Entry point
  *
@@ -20,12 +20,3 @@ int main(void)
 	}
 	_putchar('\n');
 	return(0);
-}
-
-void print_alphabet(void)
-{
-	for (char c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-}
