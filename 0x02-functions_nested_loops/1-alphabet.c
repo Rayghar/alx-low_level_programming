@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdio.h>
 
 void print_alphabet(void);
 
@@ -17,6 +18,7 @@ int main(void)
 /**
  * print_alphabet - Prints the alphabet in lowercase
  */
+
 void print_alphabet(void)
 {
 	char letter = 'a';
