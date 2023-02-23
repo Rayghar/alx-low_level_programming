@@ -1,31 +1,16 @@
-#include "main.h"
-#include <unistd.h>
+#include <main.h>
 #include <stdio.h>
-
-int _putchar(char c);
-
 /**
- * print_alphabet - Prints the alphabet in lowercase
+ * print_alphabet - Prints the alphabet in lowercase followed by a new line
  */
 void print_alphabet(void)
 {
-	char letter = 'a';
+        char letter;
 
-	while (letter <= 'z')
-	{
-		_putchar(letter);
-		letter++;
-	}
-	_putchar('\n');
+        for (letter = 'a'; letter <= 'z'; letter++)
+        {
+                _putchar(letter);
+        }
+        _putchar('\n');
 }
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
