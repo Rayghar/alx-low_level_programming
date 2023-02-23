@@ -1,32 +1,19 @@
 #include "main.h"
-#include <unistd.h>
-#include <stdio.h>
-
-void print_alphabet(void);
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - Prints the alphabet in lowercase 10 times
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-        print_alphabet();
-        return (0);
-}
+	char letter;
+	int i;
 
-/**
- * print_alphabet - Prints the alphabet in lowercase
- */
-
-void print_alphabet(void)
-{
-	char letter = 'a';
-
-	while (letter <= 'z')
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(letter);
-		letter++;
-	}
+		for (letter = 'a'; letter <= 'z'; letter++)
+		{
+			_putchar(letter);
+		}
 	_putchar('\n');
+	}
 }
