@@ -2,16 +2,13 @@
 #include <stdio.h>
 
 /**
- * _islower - Checks for lowercase character
- * @c: The character to be checked
+ * mul - multiplies two integers
+ * @a: the first integer to multiply
+ * @b: the second integer to multiply
  *
- * Return: 1 if c is lowercase, 0 otherwise
+ * Return: the product of a and b
  */
-int _islower(int c)
+int mul(int a, int b)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
+	return (a * b);
 }
-

@@ -2,16 +2,13 @@
 #include <stdio.h>
 
 /**
- * _islower - Checks for lowercase character
- * @c: The character to be checked
- *
- * Return: 1 if c is lowercase, 0 otherwise
+ * print_numbers - prints the numbers 0 to 9, followed by a new line
  */
-int _islower(int c)
+void print_numbers(void)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
-}
+	int i;
 
+	for (i = 0; i <= 9; i++)
+		_putchar(i + '0');
+	_putchar('\n');
+}
