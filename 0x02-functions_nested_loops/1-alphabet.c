@@ -2,23 +2,11 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void print_alphabet(void);
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-        print_alphabet();
-        return (0);
-}
+int _putchar(char c);
 
 /**
  * print_alphabet - Prints the alphabet in lowercase
  */
-
 void print_alphabet(void)
 {
 	char letter = 'a';
@@ -29,4 +17,15 @@ void print_alphabet(void)
 		letter++;
 	}
 	_putchar('\n');
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }

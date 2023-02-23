@@ -1,20 +1,32 @@
-#include <main.h>
-/**
- * print_alphabet_x10 - Prints the alphabet 10 times
- *
- * Return: void
- */
-void print_alphabet_x10(void)
-{
-    char c;
-    int i;
+#include "main.h"
+#include <unistd.h>
+#include <stdio.h>
 
-    for (i = 0; i < 10; i++)
-    {
-        for (c = 'a'; c <= 'z'; c++)
-        {
-            _putchar(c);
-        }
-        _putchar('\n');
-    }
+void print_alphabet(void);
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        print_alphabet();
+        return (0);
+}
+
+/**
+ * print_alphabet - Prints the alphabet in lowercase
+ */
+
+void print_alphabet(void)
+{
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
 }
