@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
+
 /**
  * print_alphabet - Prints the alphabet in lowercase followed by a new line
  */
@@ -13,4 +15,13 @@ void print_alphabet(void)
         }
         _putchar('\n');
 }
-
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
