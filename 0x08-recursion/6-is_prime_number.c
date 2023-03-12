@@ -13,12 +13,12 @@ int check_prime(int n, int divisor);
 int is_prime_number(int n)
 {
 	if (n < 2) /* 0 and 1 are not prime */
-		return 0;
+		return (0);
 	if (n == 2) /* 2 is the only even prime number */
-		return 1;
+		return (1);
         if (n % 2 == 0) /* all other even numbers are not prime */
-		return 0;
-	return check_prime(n, 3);
+		return (0);
+	return (check_prime(n, 3));
 }
 
 /**
@@ -31,9 +31,9 @@ int is_prime_number(int n)
 int check_prime(int n, int divisor)
 {
 	if (divisor * divisor > n) /* we've checked all possible divisors */
-		return 1;
+		return (1);
 	if (n % divisor == 0) /* n is not prime */
-		return 0;
+		return (0);
 	else
-		return check_prime(n, divisor + 2); /* check the next odd divisor */
+		return (check_prime(n, divisor + 2)); /* check the next odd divisor */
 }
