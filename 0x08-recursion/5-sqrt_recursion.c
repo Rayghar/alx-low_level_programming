@@ -9,22 +9,19 @@
  */
 int _sqrt_recursion(int n)
 {
-	int root;
+    if (n < 0)
+        return (-1);
 
-	if (n < 0)
-		return (-1);
+    if (n == 0 || n == 1)
+        return (n);
 
-	if (n == 0 || n == 1)
-		return (n);
+    int i;
+    for (i = 1; i * i < n; i++)
+        ;
 
-	root = _sqrt_recursion(n / 2);
+    if (i * i == n)
+        return (i);
 
-	if (root * root == n)
-		return (root);
-
-	else if (root * root < n)
-		return (_sqrt_helper(n, root + 1, n - 1));
-
-	else
-		return (-1);
+    return (-1);
 }
+
