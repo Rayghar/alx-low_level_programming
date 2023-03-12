@@ -5,8 +5,7 @@
  * _sqrt_recursion - Returns the natural square root of a number.
  * @n: The number to find the natural square root of.
  *
- * Return: The natural square root of n.
- *         If n does not have a natural square root, return -1.
+ * Return: The natural square root of n If n does not have a natural square root, return -1.
  */
 int _sqrt_recursion(int n)
 {
@@ -22,10 +21,8 @@ int _sqrt_recursion(int n)
  * @n: The number to find the square root of.
  * @i: The current guess at the square root of n.
  *
- * Return: The square root of n if i * i == n.
- *         If i * i > n, return -1.
- *         Otherwise, return the result of calling the function recursively
- *         with n and i + 1.
+ * Return: The square root of n if i * i == n If i * i > n, return -1.
+ *         Otherwise, return the result of calling the function recursively with n and i + 1.
  */
 int _sqrt_recursion_helper(int n, int i)
 {

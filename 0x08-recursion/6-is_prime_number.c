@@ -4,6 +4,7 @@
 /**
  * is_prime_number - returns 1 if n is prime, 0 otherwise
  * @n: the integer to test for primality
+ * @divisor: the current divisor to check
  *
  * Return: 1 if n is prime, 0 otherwise
  */
@@ -16,7 +17,7 @@ int is_prime_number(int n)
 		return (0);
 	if (n == 2) /* 2 is the only even prime number */
 		return (1);
-        if (n % 2 == 0) /* all other even numbers are not prime */
+	if (n % 2 == 0) /* all other even numbers are not prime */
 		return (0);
 	return (check_prime(n, 3));
 }
