@@ -8,6 +8,8 @@
  * Return: 1 if n is prime, 0 otherwise
  */
 
+int check_prime(int n, int divisor);
+
 int is_prime_number(int n)
 {
 	if (n < 2) /* 0 and 1 are not prime */
