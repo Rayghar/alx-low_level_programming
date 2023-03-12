@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#define __USE_MISC
+#include <math.h>
+#undef __USE_MISC
 
 /**
  * is_prime_number - returns 1 if n is prime, 0 otherwise
