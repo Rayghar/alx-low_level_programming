@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <math.h>
-
+#include <stddef.h>
 /**
  * is_prime_number - returns 1 if n is prime, 0 otherwise
  * @n: the integer to test for primality
