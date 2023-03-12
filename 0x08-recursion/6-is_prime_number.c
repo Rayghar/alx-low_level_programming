@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <math.h>
-#include <stddef.h>
+
 /**
  * is_prime_number - returns 1 if n is prime, 0 otherwise
  * @n: the integer to test for primality
@@ -9,15 +8,13 @@
  * Return: 1 if n is prime, 0 otherwise
  */
 
-int check_prime(int n, int divisor);
-
 int is_prime_number(int n)
 {
 	if (n < 2) /* 0 and 1 are not prime */
 		return 0;
 	if (n == 2) /* 2 is the only even prime number */
 		return 1;
-	if (n % 2 == 0) /* all other even numbers are not prime */
+        if (n % 2 == 0) /* all other even numbers are not prime */
 		return 0;
 	return check_prime(n, 3);
 }
