@@ -2,24 +2,29 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: the number to compute the square root of.
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: input number
  *
- * Return: the natural square root of n, or -1 if n does not have a
- *         natural square root.
+ * Return: natural square root of n, -1 if n does not have a natural square root
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0) /* negative numbers do not have natural square roots */
+	int root;
+
+	if (n < 0)
 		return (-1);
-	if (n == 0 || n == 1) /* the square root of 0 or 1 is itself */
+
+	if (n == 0 || n == 1)
 		return (n);
-	int root = _sqrt_recursion(n / 2);
+
+	root = _sqrt_recursion(n / 2);
 
 	if (root * root == n)
 		return (root);
+
 	else if (root * root < n)
-		return _sqrt_recursion((n - root * root) == -1 ? -1 : root);
+		return (_sqrt_helper(n, root + 1, n - 1));
+
 	else
-		return -1;
+		return (-1);
 }
