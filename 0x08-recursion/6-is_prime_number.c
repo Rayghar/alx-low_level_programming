@@ -3,6 +3,7 @@
 #define __USE_MISC
 #include <math.h>
 #undef __USE_MISC
+#include <stdio.h>
 
 /**
  * is_prime_number - returns 1 if n is prime, 0 otherwise
